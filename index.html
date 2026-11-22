@@ -4,12 +4,12 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#151714">
-  <meta name="description" content="CS2Link 2.2 — CS2 және FACEIT үшін тегін Windows бағдарламасы. Бағдарламаны жүктеп, ойын кезінде фондық файл жіберуді екі батырмамен басқар.">
+  <meta name="description" content="CS2Link 2.3 — CS2 және FACEIT үшін тегін Windows бағдарламасы. Бағдарламаны жүктеп, ойын кезінде фондық файл жіберуді екі батырмамен басқар.">
   <title>CS2Link — CS2 және FACEIT үшін жүктеу</title>
   <link rel="canonical" href="https://mikosh001.github.io/cs2link/">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="kk_KZ">
-  <meta property="og:title" content="CS2Link 2.2 — Windows үшін жүктеу">
+  <meta property="og:title" content="CS2Link 2.3 — Windows үшін жүктеу">
   <meta property="og:description" content="CS2 және FACEIT ойнағанда фондық файл жіберуді уақытша шектейтін тегін бағдарлама. Архив пен қазақша нұсқаулық.">
   <meta property="og:url" content="https://mikosh001.github.io/cs2link/">
   <meta property="og:image" content="https://mikosh001.github.io/cs2link/assets/cable.jpg">
@@ -41,9 +41,9 @@
         <div class="hero-copy">
           <p class="eyebrow"><span class="rule" aria-hidden="true"></span> CS2 <span class="slash">/</span> FACEIT</p>
           <h1 id="headline">Пинг секірісін<br><em>азайт.</em></h1>
-          <p class="intro">CS2Link ойын кезінде браузер, бұлт пен торренттің файл жіберуін уақытша шектейді. Бұл интернетке жүктеме түскенде матчтағы кідірісті азайтуға көмектеседі.</p>
+          <p class="intro">CS2Link желі жүктемесіне қарай фондық файл жіберуді шектейді. Бұл CS2 мен FACEIT-тегі пинг секірісін азайтуға көмектеседі. Ойын буфері өзің таңдаған мәнде қалады.</p>
           <div class="actions">
-            <a class="download" href="./downloads/CS2Link-2.2-Windows.zip" download="CS2Link-2.2-Windows.zip"><span class="windows-icon" aria-hidden="true"><i></i><i></i><i></i><i></i></span>Windows үшін жүктеу</a>
+            <a class="download" href="./downloads/CS2Link-2.3-Windows.zip" download="CS2Link-2.3-Windows.zip"><span class="windows-icon" aria-hidden="true"><i></i><i></i><i></i><i></i></span>Windows үшін жүктеу</a>
             <button class="share" id="share" type="button" hidden><span class="link-icon" aria-hidden="true"></span><span id="share-label">Сілтемені көшіру</span></button>
           </div>
           <span class="sr" id="share-status" role="status"></span>
@@ -51,7 +51,7 @@
             <label for="share-url">Сайт сілтемесін көшіріп ал</label>
             <input id="share-url" type="url" readonly value="https://mikosh001.github.io/cs2link/">
           </div>
-          <ul class="release-facts" aria-label="Жүктеу туралы"><li>2.2 нұсқасы</li><li>ZIP · 42 КБ</li><li>Тегін</li></ul>
+          <ul class="release-facts" aria-label="Жүктеу туралы"><li>2.3 нұсқасы</li><li>ZIP · 47,2 КБ</li><li>Тегін</li></ul>
         </div>
       </div>
     </section>
@@ -92,11 +92,19 @@
           </details>
           <details>
             <summary>Қай бағдарламалардың жылдамдығы шектеледі?</summary>
-            <p>Edge, Chrome, Firefox, Brave және Opera браузерлерінің сыртқа шығатын TCP трафигі мен 443-портқа жіберетін UDP трафигі қамтылады. OneDrive, Dropbox, Google Drive, qBittorrent және Transmission-Qt үшін сыртқа шығатын TCP трафигі қамтылады. Әр ереженің шегі — 16 Мбит/с.</p>
+            <p>Edge, Chrome, Firefox, Brave және Opera браузерлерінің сыртқа шығатын TCP трафигі мен 443-портқа жіберетін UDP трафигі қамтылады. OneDrive, Dropbox, Google Drive, qBittorrent және Transmission-Qt үшін сыртқа шығатын TCP трафигі қамтылады. Әр ереженің бастапқы шегі — 16 Мбит/с.</p>
+          </details>
+          <details>
+            <summary>Автоматты шек қалай таңдалады?</summary>
+            <p>CS2Link компьютердің сыртқа жіберген дерек көлемін және Мәскеу мен Франкфурттағы EDIS бақылау тораптарының кідірісін өлшейді. Файл жіберу кезінде екі тораптың да кідірісі қалыпты деңгейден үш өлшем қатарынан кемінде 15 мс жоғарыласа, шек 8, 4, 2 немесе 1 Мбит/с-ке түсуі мүмкін. Желі тынышталғанда 16 Мбит/с қайтарылады. Матчтағы пинг CS2 ішінде көрінеді.</p>
+          </details>
+          <details>
+            <summary>2.3 нұсқасы ойынға қосымша тик қоса ма?</summary>
+            <p>Қоспайды. Мысалы, CS2 буферің 0 болса, «Қосу» басқан соң да 0 болып қалады. 2.2-ден жаңартқанда бұрынғы терезені қалыпты жап. Ескі бағдарлама өзі өзгерткен буферді CS2 жабылғанда бастапқы мәніне қайтарады.</p>
           </details>
           <details>
             <summary>CS2 ашық тұрса, не істеймін?</summary>
-            <p>Ойынды жалғастыра бер. «Қосу» басып, Windows рұқсатын берсең, фондық трафик шектеуі іске қосылады. Ойын буфері мен телеметрия баптаулары CS2-ні жауып, қайта ашқанда қолданылады.</p>
+            <p>Ойынды жалғастыра бер. «Қосу» басып, Windows рұқсатын берсең, фондық трафик шектеуі іске қосылады. Телеметрия баптаулары CS2-ні жауып, қайта ашқанда қолданылады.</p>
           </details>
           <details>
             <summary>Бастапқы баптауды қалай қайтарамын?</summary>
@@ -104,13 +112,13 @@
           </details>
           <details>
             <summary>Windows неге рұқсат сұрайды?</summary>
-            <p>CS2Link фондық трафикке уақытша Windows QoS ережелерін қолданады. Оған әкімші рұқсаты қажет. EXE-ге баспагердің цифрлық қолтаңбасы қойылмаған, сондықтан Windows «Белгісіз баспагер» деп көрсетуі мүмкін. 2.2 нұсқасы Windows 11-де тексерілді.</p>
+            <p>CS2Link фондық трафикке уақытша Windows QoS ережелерін қолданады. Оған әкімші рұқсаты қажет. EXE-ге баспагердің цифрлық қолтаңбасы қойылмаған, сондықтан Windows «Белгісіз баспагер» деп көрсетуі мүмкін. 2.3 нұсқасы Windows 11-де тексерілді.</p>
           </details>
           <details>
             <summary>Жүктелген архивті қалай тексеремін?</summary>
             <p>Жүктеу папкасында PowerShell ашып, мына пәрменді орында. Нәтижесі төмендегі SHA-256 мәнімен сәйкес болуы керек.</p>
-            <code class="digest">Get-FileHash .\CS2Link-2.2-Windows.zip -Algorithm SHA256</code>
-            <code class="digest">648FBABAF5AB3F1CE265B89A3BC7CEC618E9BC830E3CDFF1EC7070C3D855CAAB</code>
+            <code class="digest">Get-FileHash .\CS2Link-2.3-Windows.zip -Algorithm SHA256</code>
+            <code class="digest">6AA868D65B745163334CD8252BE1E8B77C52EF424F293E0E2EA108B36DBC352D</code>
           </details>
         </div>
       </div>

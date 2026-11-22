@@ -2,11 +2,11 @@
 
 CS2 мен FACEIT ойнағанда фондық файл жіберуді уақытша шектейтін тегін Windows бағдарламасының жүктеу беті.
 
-[Сайт пен нұсқаулық](https://mikosh001.github.io/cs2link/) · [Windows үшін 2.2 нұсқасын жүктеу](https://mikosh001.github.io/cs2link/downloads/CS2Link-2.2-Windows.zip)
+[Сайт пен нұсқаулық](https://mikosh001.github.io/cs2link/) · [Windows үшін 2.3 нұсқасын жүктеу](https://mikosh001.github.io/cs2link/downloads/CS2Link-2.3-Windows.zip)
 
-Архивке `CS2Link.exe` мен қазақша нұсқаулық кіреді. 2.2 нұсқасы Windows 11-де тексерілді.
+Архивке `CS2Link.exe` мен қазақша нұсқаулық кіреді. 2.3 нұсқасы Windows 11-де тексерілді.
 
-ZIP файлының SHA-256 мәні — `648FBABAF5AB3F1CE265B89A3BC7CEC618E9BC830E3CDFF1EC7070C3D855CAAB`.
+ZIP файлының SHA-256 мәні — `6AA868D65B745163334CD8252BE1E8B77C52EF424F293E0E2EA108B36DBC352D`.
 
 <details>
 <summary>Сайттың иллюстрациясы мен қарпі</summary>
